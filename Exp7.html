@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <title>Registration form</title>
+  <body>
+    <h1>Registration form</h1>
+    <div>
+      <form name="regform" method="post" onsubmit="validateForm()">
+        <label for="name">Name:</label>
+        <input name="name" type="text" /><br /><br />
+        <label for="age">Age:</label>
+        <input name="age" type="text" /><br /><br />
+        <label for="email">Email:</label>
+        <input name="email" type="email" /><br /><br />
+        <label for="address">Address</label>
+        <input name="add" type="text" /><br /><br />
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gen" />
+        <label for="male">Male</label>
+        <input type="radio" name="gen" />
+        <label for="female">Female</label>
+        `
+        <input type="radio" name="gen" />
+        <label for="other">Other</label>
+        <br /><br />
+        <label for="city">City: </label>
+        <select name="city" id="city">
+          <option value="">Select your city</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Banglore">Banglore</option>
+          <option value="Delhi">Delhi</option></select
+        ><br /><br />
+        <label for="hobby">Hobby: </label><br />
+        <input type="checkbox" />
+        <label for="h1">Reading</label><br />
+        <input type="checkbox" />
+        <label for="h2">Sports</label><br />
+        <input type="checkbox" />
+        <label for="h1">Music</label><br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script>
+      function validateForm() {
+        var name = document.forms["regform"]["name"].value;
+        var age = document.forms["regform"]["age"].value;
+        var email = document.forms["regform"]["email"];
+        var gn = document.forms["regform"]["gen"];
+        var city = document.forms["regform"]["city"];
+        if (name == null || name == "") {
+          alert("Name cannot be blank");
+          return false;
+        } else if (age == null || age == "") {
+          alert("Age cannot be blank");
+          return false;
+        } else if (email == null || email == "") {
+          alert("Email cannot be blank");
+          return false;
+        } else if (
+          gn[0].checked == false &&
+          gn[1].checked == false &&
+          gn[2].checked == false
+        ) {
+          alert("Please enter your gender");
+          return false;
+        } else if (city.selectedIndex == 0) {
+          alert("Enter your city");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

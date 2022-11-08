@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.m
+in.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.
+js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bun
+dle.min.js"></script>
+    <style>
+      body {
+        background: rgb(18, 17, 17);
+      }
+      .bg1,
+      .bg2,
+      .bg3 {
+        border: 1px solid;
+        margin: 3px;
+        color: white;
+      }
+      .container-fluid h2 {
+        color: white;
+        display: flex;
+        padding: 30px;
+        justify-content: center;
+      }
+      form label,
+      h3 {
+        color: white;
+        padding-top: 20px;
+      }
+      .btn:hover {
+        background: White;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Tea Shop</a>
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbardrop"
+            data-toggle="dropdown"
+          >
+            Dropdown link
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Services</a>
+            <a class="dropdown-item" href="#">About Us</a>
+            <a class="dropdown-item" href="#">Contact Us</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid">
+      <h2>Types of Tea</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg1">
+          <h4>Irani Chai</h4>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          aliquid optio ipsam error dolorum, mollitia expedita, eius magni in
+          accusamus assumenda, facilis voluptatibus. Sequi consectetur veniam
+          atque, perferendis omnis in nesciunt vero!
+        </div>
+        <div class="col bg2">
+          <h4>Elaichi Chai</h4>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          provident officiis dolores quidem dolorem nam quae, quia ex et
+          accusamus laboriosam odit magni nihil corrupti totam porro beatae
+          eveniet saepe?
+        </div>
+        <div class="col bg3">
+          <h4>Cutting Chai</h4>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+          expedita? Velit, praesentium obcaecati. Laudantium, reprehenderit
+          eveniet voluptas non facilis mollitia unde blanditiis libero.
+          Quibusdam, accusantium!
+        </div>
+      </div>
+      <div class="row">
+        <div class="col bg1">
+          <h4>Coffe</h4>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          aliquid optio ipsam error dolorum, mollitia expedita, eius magni in
+          accusamus assumenda, facilis voluptatibus. Sequi consectetur veniam
+          atque, perferendis omnis in nesciunt vero!
+        </div>
+        <div class="col bg2">
+          <h4>Cold Drink</h4>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          provident officiis dolores quidem dolorem nam quae, quia ex et
+          accusamus laboriosam odit magni nihil corrupti totam porro beatae
+          eveniet saepe?
+        </div>
+      </div>
+    </div>
+    <h3>Login to continue</h3>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter email"
+          name="email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="pwd"
+          placeholder="Enter password"
+          name="pswd"
+        />
+      </div>
+      <div class="form-group form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember" />
+          Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+</html>
